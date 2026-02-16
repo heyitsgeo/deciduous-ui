@@ -1,0 +1,43 @@
+// Defines the top navigation bar.
+nav {
+  background: var(--nav-background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--nav-padding-vertical) var(--nav-padding-horizontal);
+  border-bottom: 1px solid var(--nav-border-color);
+}
+
+// brand link
+nav > a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+// nav links
+nav > ul {
+  list-style: none;
+  font-size: 0; // removes whitespace between inline-block elements
+}
+
+nav > ul > li {
+  font-size: 1rem;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+nav > ul > li > a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+nav > ul > li > a:hover {
+  color: var(--nav-link-hover-color);
+}
+
+nav > ul > li > a[aria-current="page"] {
+  text-decoration: underline;
+}

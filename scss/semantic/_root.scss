@@ -1,0 +1,15 @@
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--font-color);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  background-color: var(--background-color);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--smoke-darken-1);
+  margin: 2rem 0;
+}

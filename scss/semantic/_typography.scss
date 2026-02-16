@@ -1,0 +1,72 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+code {
+  font-family: var(--font-family-mono);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--font-color);
+  background-color: var(--white);
+  padding: 0.25rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+a {
+  color: var(--anchor-color);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+a:hover {
+  color: var(--anchor-hover-color);
+  text-decoration: underline;
+}
+
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--block-quote-border-color);
+}
+
+blockquote > footer {
+  color: var(--block-quote-attriubte-color);
+}
+
+ul {
+  list-style: square;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>New Monthly Report</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+  <nav aria-label="breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reports.html">Monthly Reports</a></li>
+      <li><a href="add-report.html" aria-current="page">Add Report</a></li>
+    </ol>
+  </nav>
+  <hgroup>
+    <h1>Add Report</h1>
+    <h6>Enter report details.</h6>
+  </hgroup>
+</header>
+<main>
+  <article>
+  <form method="post" action="/reports">
+    <label for="Year">Year</label>
+    <input type="number" min="2021" data-val="true" data-val-required="The Year field is required." id="Year" name="Year" value="2023"><input name="__Invariant" type="hidden" value="Year" />
+
+    <label for="Month">Month</label>
+    <select data-val="true" data-val-required="The Month field is required." id="Month" name="Month">
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">August</option>
+      <option value="9" selected="selected">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+
+    <label for="Cash">Cash</label>
+    <input type="text" data-val="true" data-val-number="The field Cash must be a number." data-val-required="The Cash field is required." id="Cash" name="Cash" value="0">
+
+    <label for="Revenue">Revenue</label>
+    <input type="text" data-val="true" data-val-number="The field Revenue must be a number." data-val-required="The Revenue field is required." id="Revenue" name="Revenue" value="0">
+
+    <label for="PayrollExpenses">Payroll Expenses</label>
+    <input type="text" data-val="true" data-val-number="The field Payroll Expenses must be a number." data-val-required="The Payroll Expenses field is required." id="PayrollExpenses" name="PayrollExpenses" value="0">
+
+    <label for="OtherExpenses">Other Expenses</label>
+    <input type="text" data-val="true" data-val-number="The field Other Expenses must be a number." data-val-required="The Other Expenses field is required." id="OtherExpenses" name="OtherExpenses" value="0">
+
+    <label for="Zone">Zone</label>
+    <select data-val="true" data-val-required="The Zone field is required." id="Zone" name="Zone">
+      <option value="0" selected="selected">Red</option>
+      <option value="1">Yellow</option>
+      <option value="2">Green</option>
+    </select>
+
+    <label for="WorkHours">Work Hours</label>
+    <input type="number" min="0" max="200" data-val="true" data-val-number="The field Work Hours must be a number." data-val-required="The Work Hours field is required." id="WorkHours" name="WorkHours" value="0"><input name="__Invariant" type="hidden" value="WorkHours" />
+
+    <table>
+      <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Hours Billed</th>
+        <th scope="col">Hours Not Billed</th>
+        <th scope="col">Hours PTO</th>
+        <th scope="col">Hours Sick</th>
+        <th scope="col">Hours Other</th>
+        <th scope="col">Target Rate</th>
+      </tr>
+      </thead>
+      <tbody>
+      <input type="hidden" data-val="true" data-val-required="The EmployeeId field is required." id="Employees_0__EmployeeId" name="Employees[0].EmployeeId" value="2">
+      <input type="hidden" id="Employees_0__UserName" name="Employees[0].UserName" value="Russ Forstall">
+      <tr>
+        <td>Russ Forstall</td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursBilled must be a number." data-val-required="The HoursBilled field is required." id="Employees_0__HoursBilled" name="Employees[0].HoursBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursNotBilled must be a number." data-val-required="The HoursNotBilled field is required." id="Employees_0__HoursNotBilled" name="Employees[0].HoursNotBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursPto must be a number." data-val-required="The HoursPto field is required." id="Employees_0__HoursPto" name="Employees[0].HoursPto" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursSick must be a number." data-val-required="The HoursSick field is required." id="Employees_0__HoursSick" name="Employees[0].HoursSick" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursOther must be a number." data-val-required="The HoursOther field is required." id="Employees_0__HoursOther" name="Employees[0].HoursOther" value="0"></td>
+        <td><input type="text" size="10" maxlength="4" data-val="true" data-val-number="The field TargetRate must be a number." data-val-range="The target rate should be a decimal percent between 0 and 1. e.g., 0.8 for 80%." data-val-range-max="1" data-val-range-min="0" data-val-required="The TargetRate field is required." id="Employees_0__TargetRate" name="Employees[0].TargetRate" value="0.4"></td>
+      </tr>
+      <input type="hidden" data-val="true" data-val-required="The EmployeeId field is required." id="Employees_1__EmployeeId" name="Employees[1].EmployeeId" value="3">
+      <input type="hidden" id="Employees_1__UserName" name="Employees[1].UserName" value="Geo Stokes">
+      <tr>
+        <td>Geo Stokes</td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursBilled must be a number." data-val-required="The HoursBilled field is required." id="Employees_1__HoursBilled" name="Employees[1].HoursBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursNotBilled must be a number." data-val-required="The HoursNotBilled field is required." id="Employees_1__HoursNotBilled" name="Employees[1].HoursNotBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursPto must be a number." data-val-required="The HoursPto field is required." id="Employees_1__HoursPto" name="Employees[1].HoursPto" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursSick must be a number." data-val-required="The HoursSick field is required." id="Employees_1__HoursSick" name="Employees[1].HoursSick" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursOther must be a number." data-val-required="The HoursOther field is required." id="Employees_1__HoursOther" name="Employees[1].HoursOther" value="0"></td>
+        <td><input type="text" size="10" maxlength="4" data-val="true" data-val-number="The field TargetRate must be a number." data-val-range="The target rate should be a decimal percent between 0 and 1. e.g., 0.8 for 80%." data-val-range-max="1" data-val-range-min="0" data-val-required="The TargetRate field is required." id="Employees_1__TargetRate" name="Employees[1].TargetRate" value="0.7"></td>
+      </tr>
+      <input type="hidden" data-val="true" data-val-required="The EmployeeId field is required." id="Employees_2__EmployeeId" name="Employees[2].EmployeeId" value="1">
+      <input type="hidden" id="Employees_2__UserName" name="Employees[2].UserName" value="Steven Benitez">
+      <tr>
+        <td>Steven Benitez</td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursBilled must be a number." data-val-required="The HoursBilled field is required." id="Employees_2__HoursBilled" name="Employees[2].HoursBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursNotBilled must be a number." data-val-required="The HoursNotBilled field is required." id="Employees_2__HoursNotBilled" name="Employees[2].HoursNotBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursPto must be a number." data-val-required="The HoursPto field is required." id="Employees_2__HoursPto" name="Employees[2].HoursPto" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursSick must be a number." data-val-required="The HoursSick field is required." id="Employees_2__HoursSick" name="Employees[2].HoursSick" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursOther must be a number." data-val-required="The HoursOther field is required." id="Employees_2__HoursOther" name="Employees[2].HoursOther" value="0"></td>
+        <td><input type="text" size="10" maxlength="4" data-val="true" data-val-number="The field TargetRate must be a number." data-val-range="The target rate should be a decimal percent between 0 and 1. e.g., 0.8 for 80%." data-val-range-max="1" data-val-range-min="0" data-val-required="The TargetRate field is required." id="Employees_2__TargetRate" name="Employees[2].TargetRate" value="0.7"></td>
+      </tr>
+      <input type="hidden" data-val="true" data-val-required="The EmployeeId field is required." id="Employees_3__EmployeeId" name="Employees[3].EmployeeId" value="4">
+      <input type="hidden" id="Employees_3__UserName" name="Employees[3].UserName" value="Paul Miller">
+      <tr>
+        <td>Paul Miller</td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursBilled must be a number." data-val-required="The HoursBilled field is required." id="Employees_3__HoursBilled" name="Employees[3].HoursBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursNotBilled must be a number." data-val-required="The HoursNotBilled field is required." id="Employees_3__HoursNotBilled" name="Employees[3].HoursNotBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursPto must be a number." data-val-required="The HoursPto field is required." id="Employees_3__HoursPto" name="Employees[3].HoursPto" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursSick must be a number." data-val-required="The HoursSick field is required." id="Employees_3__HoursSick" name="Employees[3].HoursSick" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursOther must be a number." data-val-required="The HoursOther field is required." id="Employees_3__HoursOther" name="Employees[3].HoursOther" value="0"></td>
+        <td><input type="text" size="10" maxlength="4" data-val="true" data-val-number="The field TargetRate must be a number." data-val-range="The target rate should be a decimal percent between 0 and 1. e.g., 0.8 for 80%." data-val-range-max="1" data-val-range-min="0" data-val-required="The TargetRate field is required." id="Employees_3__TargetRate" name="Employees[3].TargetRate" value="0.8"></td>
+      </tr>
+      <input type="hidden" data-val="true" data-val-required="The EmployeeId field is required." id="Employees_4__EmployeeId" name="Employees[4].EmployeeId" value="6">
+      <input type="hidden" id="Employees_4__UserName" name="Employees[4].UserName" value="Adrien Sizemore">
+      <tr>
+        <td>Adrien Sizemore</td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursBilled must be a number." data-val-required="The HoursBilled field is required." id="Employees_4__HoursBilled" name="Employees[4].HoursBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursNotBilled must be a number." data-val-required="The HoursNotBilled field is required." id="Employees_4__HoursNotBilled" name="Employees[4].HoursNotBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursPto must be a number." data-val-required="The HoursPto field is required." id="Employees_4__HoursPto" name="Employees[4].HoursPto" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursSick must be a number." data-val-required="The HoursSick field is required." id="Employees_4__HoursSick" name="Employees[4].HoursSick" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursOther must be a number." data-val-required="The HoursOther field is required." id="Employees_4__HoursOther" name="Employees[4].HoursOther" value="0"></td>
+        <td><input type="text" size="10" maxlength="4" data-val="true" data-val-number="The field TargetRate must be a number." data-val-range="The target rate should be a decimal percent between 0 and 1. e.g., 0.8 for 80%." data-val-range-max="1" data-val-range-min="0" data-val-required="The TargetRate field is required." id="Employees_4__TargetRate" name="Employees[4].TargetRate" value="0.5"></td>
+      </tr>
+      <input type="hidden" data-val="true" data-val-required="The EmployeeId field is required." id="Employees_5__EmployeeId" name="Employees[5].EmployeeId" value="7">
+      <input type="hidden" id="Employees_5__UserName" name="Employees[5].UserName" value="Josh Freedman">
+      <tr>
+        <td>Josh Freedman</td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursBilled must be a number." data-val-required="The HoursBilled field is required." id="Employees_5__HoursBilled" name="Employees[5].HoursBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursNotBilled must be a number." data-val-required="The HoursNotBilled field is required." id="Employees_5__HoursNotBilled" name="Employees[5].HoursNotBilled" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursPto must be a number." data-val-required="The HoursPto field is required." id="Employees_5__HoursPto" name="Employees[5].HoursPto" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursSick must be a number." data-val-required="The HoursSick field is required." id="Employees_5__HoursSick" name="Employees[5].HoursSick" value="0"></td>
+        <td><input type="text" size="5" maxlength="6" data-val="true" data-val-number="The field HoursOther must be a number." data-val-required="The HoursOther field is required." id="Employees_5__HoursOther" name="Employees[5].HoursOther" value="0"></td>
+        <td><input type="text" size="10" maxlength="4" data-val="true" data-val-number="The field TargetRate must be a number." data-val-range="The target rate should be a decimal percent between 0 and 1. e.g., 0.8 for 80%." data-val-range-max="1" data-val-range-min="0" data-val-required="The TargetRate field is required." id="Employees_5__TargetRate" name="Employees[5].TargetRate" value="0.8"></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <label for="Notes">Notes</label>
+    <textarea rows="16" cols="100" id="Notes" name="Notes">
+</textarea><br>
+
+    <div>
+      <button type="submit" class="btn btn-primary">Create Monthly Report</button>
+    </div>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Iq39Kmc0MxAqHwdLZ4di8jxJ2xEpTbAgUn3JncWHoySFhEl5-ThjWiQ4tMnWPTwQYq8xRdsUL2mamof1uyeLBhVATbNVLM9eXlYj87UCrlVKOTNLcvM-q6adwM3UnMuFtPYzCuha1yO0KPgAQT0kydroFZh18tou1RHmykWg3EJniGP4BpK26Gq83QZeSlJMQ" /></form>
+  </article>
+</main>
+
+</body>
+</html>

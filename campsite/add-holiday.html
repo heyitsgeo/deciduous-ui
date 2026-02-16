@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Holiday</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <nav aria-label="breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="holidays.html">Holidays</a></li>
+      <li><a href="add-holiday.html" aria-current="page">Add Holiday</a></li>
+    </ol>
+  </nav>
+  <hgroup>
+    <h1>Add Holiday</h1>
+    <h6>Add a new holiday to the list.</h6>
+  </hgroup>
+</header>
+<main>
+  <article>
+    <form method="post" action="/holidays">
+      <label for="Name">Name</label>
+      <input type="text" required data-val="true" data-val-required="The Name field is required." id="Name" name="Name" value="">
+      <span class="text-danger field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+
+      <label for="Day">Day</label>
+      <input type="date" required data-val="true" data-val-required="The Day field is required." id="Day" name="Day" value=""><input name="__Invariant" type="hidden" value="Day" />
+      <span class="text-danger field-validation-valid" data-valmsg-for="Day" data-valmsg-replace="true"></span>
+
+      <button type="submit" class="btn btn-primary">Add Holiday</button>
+      <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Iq39Kmc0MxAqHwdLZ4di8iIsnymWW4s2QBdSExj5kQwCOCUmiaATp7W8sstbYYrOeA3U3XeGT6TGxitQmabElvfeRf-7h_X_tMyctgzqmE2cH1-CmYXkdZHKU6oay1UXrqKgmtbpDvYY5ScbHxF3Q3X-24f6pmOlGi4IwSvKWp7DX2svXu52SwCdTKc5PmIYg" />
+    </form>
+  </article>
+
+</main>
+
+</body>
+</html>

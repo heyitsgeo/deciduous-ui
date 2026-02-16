@@ -1,0 +1,6 @@
+body > footer {
+  max-width: var(--max-container-width);
+  margin: 0 auto;
+  padding: var(--container-vertical-padding) var(--container-horizontal-padding);
+  border-top: 1px solid var(--nav-border-color);
+}

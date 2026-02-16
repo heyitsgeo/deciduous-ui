@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deciduous UI Example</title>
+  <meta name="description" content="Simple classless css framework." />
+  <link rel="shortcut icon" href="https://slashpine.tech/favicon-32x32.png?v=42035f1ec51d9ed607599f673451ff97" />
+  <link rel="stylesheet" href="css/deciduous-ui.css">
+  <link rel="stylesheet" href="css/example.css">
+</head>
+<body>
+    <main>
+      <section>
+        <h2>Typography</h2>
+        <p>Examples of typography options. This is all based on the <code>--font-size</code> variable with a default of <code>16px</code>. Each size is adjusted via <code>rem</code>. To override the base simply update <code>--font-size</code> on <code>:root</code> after the initialization of Deciduous UI.</p>
+        <h3>Block Level</h3>
+        <p>All typography that takes up entire line by default.</p>
+        <h1 class="example">Heading 1</h1>
+        <h2 class="example">Heading 2</h2>
+        <h3 class="example">Heading 3</h3>
+        <h4 class="example">Heading 4</h4>
+        <h5 class="example">Heading 5</h5>
+        <h6 class="example">Heading 6</h6>
+        <p>Paragraph</p>
+        <h3>Inline</h3>
+        <a>Anchor</a>
+        <em>Emphasis</em>
+        <small>Small</small>
+        <strong>Strong</strong>
+        <u>Underline</u>
+      </section>
+      <section>
+        <h2>Grid</h2>
+        <p>Examples of a simple grid system. This uses <strong>CSS Flexbox</strong> and you control the gap by setting <code>--column-horizontal-gutter</code>, <code>--column-vertical-gutter</code>, <code>--row-horizontal-gutter</code>, and <code>--row-vertical-gutter</code> on the <code>:root</code> after the initialization of Deciduous UI.</p>
+        <div class="grid">
+          <div class="row">
+            <div class="column">
+              <div class="example-column">.column</div>
+            </div>
+            <div class="column">
+              <div class="example-column">.column</div>
+            </div>
+            <div class="column">
+              <div class="example-column">.column</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="example-column">.column</div>
+            </div>
+            <div class="column">
+              <div class="example-column">.column</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="example-column">.column</div>
+            </div>
+            <div class="column">
+              <div class="example-column">.column</div>
+            </div>
+            <div class="column">
+              <div class="example-column">.column</div>
+            </div>
+            <div class="column">
+              <div class="example-column">.column</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Column Widths</h2>
+        <p>Examples of a simple grid system. All columns are the same size, and you control the gap by setting <code>--column-horizontal-gutter</code>, <code>--column-vertical-gutter</code>, <code>--row-horizontal-gutter</code>, and <code>--row-vertical-gutter</code> on the <code>:root</code> after the initialization of Deciduous UI.</p>
+        <div class="grid">
+          <div class="row">
+            <div class="column column-25">
+              <div class="example-column">.column</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column column-50">
+              <div class="example-column">.column</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column column-75">
+              <div class="example-column">.column</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column column-100">
+              <div class="example-column">.column</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column column-75">
+              <div class="example-column">.column</div>
+            </div>
+            <div class="column column-25">
+              <div class="example-column">.column</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+</body>

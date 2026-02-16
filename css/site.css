@@ -1,0 +1,27 @@
+:root {
+  --max-container-width: 60rem;
+}
+
+h1.example,
+h2.example,
+h3.example,
+h4.example,
+h5.example,
+h6.example {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.example-column {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--smoke-darken-2);
+  text-align: center;
+  font-weight: 700;
+}
+
+main > section {
+  padding: 2rem 2rem;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/site.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAA;EACE;;;AAGF;AAAA;AAAA;AAAA;AAAA;AAAA;EAME;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE%22,%22file%22:%22site.css%22%7D */

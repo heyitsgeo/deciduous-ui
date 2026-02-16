@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>OAuth 2.0</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+  <nav aria-label="breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="badges.html">Badges</a></li>
+      <li><a href="oath-2-0.html" aria-current="page">OAuth 2.0</a> </li>
+    </ol>
+  </nav>
+  <hgroup>
+    <h1>OAuth 2.0</h1>
+    <h6>Badge Brief</h6>
+  </hgroup>
+</header>
+<main>
+  <article>
+    <div>
+      <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img/https://www.scouting.org/wp-content/uploads/elementor/thumbs/Forestry-pzk1qr6d5op6tcdis0kv9w2qzlc5w94vg3ldgrjgio.png" alt="OAuth 2.0" />
+    </div>
+
+    <h1 id="oauth-2.0">OAuth 2.0</h1>
+    <h2 id="requirements">Requirements</h2>
+    <ol>
+      <li>Describe the origins of OAuth and the problem that it is intended to solve.</li>
+      <li>Describe the difference between OAuth 1.x and OAuth 2.0.</li>
+      <li>Describe the difference between OAuth 2.0 and Open ID Connect (OIDC).</li>
+      <li>Identify several OAuth 2.0 or OIDC providers (SaaS and on-premise, etc.)</li>
+      <li>Set up an account with an OAuth 2.0 provider, such as Auth0.</li>
+      <li>Identify the five default grant types for OAuth 2.0.
+        <ol type="a">
+          <li>Identify use cases for each grant type.</li>
+        </ol>
+      </li>
+      <li>Build an OAuth 2.0 client application that uses the Authorization Code grant type. Connect this to the Identity Provider you set up previously. Demonstrate to your Guide that you can log in to your client application using the OAuth 2.0 provider.</li>
+      <li>Describe the difference between opaque (reference) tokens and transparent tokens, such as JWTs. What are the pros and cons of each?</li>
+      <li>Describe security threats that can face OAuth 2.0 implementations and how to mitigate those threats.</li>
+      <li>Build an OAuth 2.0 provider from scratch and implement the following grant types:
+        * Authorization Code
+        * Refresh Token
+        * Password</li>
+      <li>Update your OAuth 2.0 client application to use your OAuth 2.0 provider instead of the SaaS or on-premise provider it originally used. Demonstrate to your Guide that your client and provider apps integrate properly.</li>
+    </ol>
+    <h2 id="constraints">Constraints</h2>
+    <ul>
+      <li>When building your OAuth 2.0 client and provider, you may not use any OAuth SDKs, frameworks, libraries, or middleware. You must write your own implementations.</li>
+      <li>You may (and should) use SDKs for performing any hashing, encryption, or JWT signing and verifying.</li>
+      <li>You may use frameworks within your OAuth 2.0 provider for managing logged-in user state in cookies or sessions. e.g., Microsoft Identity.</li>
+    </ul>
+  </article>
+
+</main>
+
+</body>
+</html>

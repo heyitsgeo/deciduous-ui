@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profit Sharing Projection</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/overrides.css">
+</head>
+<body>
+
+<header>
+  <nav aria-label="breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profit-sharing.html" aria-current="page">Profit Sharing Projection</a></li>
+    </ol>
+  </nav>
+  <hgroup>
+    <h1>Profit Sharing Projection</h1>
+    <h6>View profit sharing projections.</h6>
+  </hgroup>
+</header>
+<main>
+  <article>
+    <p>
+      <i>This calculator is intended for making projections and is not a promise that you will make the listed amount.</i>
+    </p>
+  </article>
+
+  <article>
+  <form method="get" action="/profit-sharing" class="d-flex align-items-center gap-3">
+    <div>
+      <label for="PotSize">Pot Size</label>
+      <input type="text" size="9" maxlength="9" data-val="true" data-val-number="The field PotSize must be a number." data-val-required="The PotSize field is required." id="PotSize" name="PotSize" value="60000">
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+  </form>
+  </article>
+
+  <article>
+  <table>
+    <thead>
+    <tr>
+      <th>Shareholder</th>
+      <th>Time Multiplier</th>
+      <th>Role Multiplier</th>
+      <th>Total Multiplier</th>
+      <th>Gross Amount</th>
+      <th>Taxes</th>
+      <th>Net Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Russ Forstall</td>
+      <td style="text-align: right;">8.000</td>
+      <td style="text-align: right;">5.000</td>
+      <td style="text-align: right;">40.000</td>
+      <td style="text-align: right;">$14,723.92</td>
+      <td style="text-align: right;">7.650%</td>
+      <td style="text-align: right;">$13,677.58</td>
+    </tr>
+    <tr>
+      <td>Geo Stokes</td>
+      <td style="text-align: right;">8.000</td>
+      <td style="text-align: right;">5.000</td>
+      <td style="text-align: right;">40.000</td>
+      <td style="text-align: right;">$14,723.92</td>
+      <td style="text-align: right;">7.650%</td>
+      <td style="text-align: right;">$13,677.58</td>
+    </tr>
+    <tr>
+      <td>Steven Benitez</td>
+      <td style="text-align: right;">8.000</td>
+      <td style="text-align: right;">5.000</td>
+      <td style="text-align: right;">40.000</td>
+      <td style="text-align: right;">$14,723.92</td>
+      <td style="text-align: right;">7.650%</td>
+      <td style="text-align: right;">$13,677.58</td>
+    </tr>
+    <tr>
+      <td>Paul Miller</td>
+      <td style="text-align: right;">7.000</td>
+      <td style="text-align: right;">4.000</td>
+      <td style="text-align: right;">28.000</td>
+      <td style="text-align: right;">$10,306.74</td>
+      <td style="text-align: right;">7.650%</td>
+      <td style="text-align: right;">$9,574.31</td>
+    </tr>
+    <tr>
+      <td>Adrien Sizemore</td>
+      <td style="text-align: right;">6.000</td>
+      <td style="text-align: right;">2.000</td>
+      <td style="text-align: right;">12.000</td>
+      <td style="text-align: right;">$4,417.17</td>
+      <td style="text-align: right;">8.740%</td>
+      <td style="text-align: right;">$4,062.14</td>
+    </tr>
+    <tr>
+      <td>Josh Freedman</td>
+      <td style="text-align: right;">1.000</td>
+      <td style="text-align: right;">3.000</td>
+      <td style="text-align: right;">3.000</td>
+      <td style="text-align: right;">$1,104.29</td>
+      <td style="text-align: right;">7.650%</td>
+      <td style="text-align: right;">$1,025.82</td>
+    </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4" style="text-align: right; font-weight: bold;">163.000</td>
+        <td style="text-align: right; font-weight: bold;">$59,999.96</td>
+        <td colspan="2" style="text-align: right; font-weight: bold;">$55,695.01</td>
+      </tr>
+    </tfoot>
+  </table>
+  </article>
+
+</main>
+
+</body>
+</html>

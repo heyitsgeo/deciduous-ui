@@ -1,0 +1,25 @@
+:root {
+  --max-container-width: 60rem;
+}
+
+h1.example,
+h2.example,
+h3.example,
+h4.example,
+h5.example,
+h6.example {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.example-column {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--smoke-darken-2);
+  text-align: center;
+  font-weight: 700;
+}
+
+main > section {
+  padding: 2rem 2rem;
+}

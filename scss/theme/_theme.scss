@@ -1,0 +1,174 @@
+$ember-hue: 11 !default;
+$ember-base-saturation: 73% !default;
+$ember-base-lightness: 53% !default;
+$ember: hsl($ember-hue, $ember-base-saturation, $ember-base-lightness) !default;
+
+$forest-hue: 180 !default;
+$forest-base-saturation: 24% !default;
+$forest-base-lightness: 10% !default;
+$forest: hsl($forest-hue, $forest-base-saturation, $forest-base-lightness) !default;
+
+$smoke-hue: 60 !default;
+$smoke-base-saturation: 3% !default;
+$smoke-base-lightness: 93% !default;
+$smoke: hsl($smoke-hue, $smoke-base-saturation, $smoke-base-lightness) !default;
+
+$fire-hue: 36 !default;
+$fire-base-saturation: 87% !default;
+$fire-base-lightness: 53% !default;
+$fire: hsl($fire-hue, $fire-base-saturation, $fire-base-lightness) !default;
+
+$pine-hue: 144 !default;
+$pine-base-saturation: 27% !default;
+$pine-base-lightness: 18% !default;
+$pine: hsl($pine-hue, $pine-base-saturation, $pine-base-lightness) !default;
+
+$cactus-hue: 143 !default;
+$cactus-base-saturation: 28% !default;
+$cactus-base-lightness: 35% !default;
+$cactus: hsl($cactus-hue, $cactus-base-saturation, $cactus-base-lightness) !default;
+
+$sinopia-hue: 11 !default;
+$sinopia-base-saturation: 76% !default;
+$sinopia-base-lightness: 45% !default;
+$sinopia: hsl($sinopia-hue, $sinopia-base-saturation, $sinopia-base-lightness) !default;
+
+:root {
+  --ember-lighten-4: #{lighten($ember, 40%)};
+  --ember-lighten-3: #{lighten($ember, 30%)};
+  --ember-lighten-2: #{lighten($ember, 20%)};
+  --ember-lighten-1: #{lighten($ember, 10%)};
+  --ember: #{$ember};
+  --ember-darken-1: #{darken($ember, 10%)};
+  --ember-darken-2: #{darken($ember, 20%)};
+  --ember-darken-3: #{darken($ember, 30%)};
+  --ember-darken-4: #{darken($ember, 40%)};
+
+  --forest-lighten-4: #{lighten($forest, 40%)};
+  --forest-lighten-3: #{lighten($forest, 30%)};
+  --forest-lighten-2: #{lighten($forest, 20%)};
+  --forest-lighten-1: #{lighten($forest, 10%)};
+  --forest: #{$forest};
+  --forest-darken-1: #{darken($forest, 10%)};
+  --forest-darken-2: #{darken($forest, 20%)};
+  --forest-darken-3: #{darken($forest, 30%)};
+  --forest-darken-4: #{darken($forest, 40%)};
+
+  --smoke-lighten-4: #{lighten($smoke, 40%)};
+  --smoke-lighten-3: #{lighten($smoke, 30%)};
+  --smoke-lighten-2: #{lighten($smoke, 20%)};
+  --smoke-lighten-1: #{lighten($smoke, 10%)};
+  --smoke: #{$smoke};
+  --smoke-darken-1: #{darken($smoke, 10%)};
+  --smoke-darken-2: #{darken($smoke, 20%)};
+  --smoke-darken-3: #{darken($smoke, 30%)};
+  --smoke-darken-4: #{darken($smoke, 40%)};
+
+  --fire-lighten-4: #{lighten($fire, 40%)};
+  --fire-lighten-3: #{lighten($fire, 30%)};
+  --fire-lighten-2: #{lighten($fire, 20%)};
+  --fire-lighten-1: #{lighten($fire, 10%)};
+  --fire: #{$fire};
+  --fire-darken-1: #{darken($fire, 10%)};
+  --fire-darken-2: #{darken($fire, 20%)};
+  --fire-darken-3: #{darken($fire, 30%)};
+  --fire-darken-4: #{darken($fire, 40%)};
+
+  --pine-lighten-4: #{lighten($pine, 40%)};
+  --pine-lighten-3: #{lighten($pine, 30%)};
+  --pine-lighten-2: #{lighten($pine, 20%)};
+  --pine-lighten-1: #{lighten($pine, 10%)};
+  --pine: #{$pine};
+  --pine-darken-1: #{darken($pine, 10%)};
+  --pine-darken-2: #{darken($pine, 20%)};
+  --pine-darken-3: #{darken($pine, 30%)};
+  --pine-darken-4: #{darken($pine, 40%)};
+
+  --cactus-lighten-4: #{lighten($cactus, 40%)};
+  --cactus-lighten-3: #{lighten($cactus, 30%)};
+  --cactus-lighten-2: #{lighten($cactus, 20%)};
+  --cactus-lighten-1: #{lighten($cactus, 10%)};
+  --cactus: #{$cactus};
+  --cactus-darken-1: #{darken($cactus, 10%)};
+  --cactus-darken-2: #{darken($cactus, 20%)};
+  --cactus-darken-3: #{darken($cactus, 30%)};
+  --cactus-darken-4: #{darken($cactus, 40%)};
+
+  --sinopia-lighten-4: #{lighten($sinopia, 40%)};
+  --sinopia-lighten-3: #{lighten($sinopia, 30%)};
+  --sinopia-lighten-2: #{lighten($sinopia, 20%)};
+  --sinopia-lighten-1: #{lighten($sinopia, 10%)};
+  --sinopia: #{$sinopia};
+  --sinopia-darken-1: #{darken($sinopia, 10%)};
+  --sinopia-darken-2: #{darken($sinopia, 20%)};
+  --sinopia-darken-3: #{darken($sinopia, 30%)};
+  --sinopia-darken-4: #{darken($sinopia, 40%)};
+
+  --white: #fff;
+  --black: #000;
+
+  --font-size: 16px;
+  --font-color: var(--forest);
+  --font-weight: 400;
+  --line-height: 1.5;
+  --letter-spacing: 0.01em;
+  --font-family: 'Ubuntu', sans-serif;
+  --font-family-mono: 'Ubuntu Mono', monospace;
+
+  --background-color: var(--smoke);
+
+  --heading-1-font-size: 4.7rem;
+  --heading-1-font-weight: 700;
+  --heading-1-font-color: var(--forest);
+  --heading-1-font-family: var(--font-family);
+
+  --heading-2-font-size: 2.7rem;
+  --heading-2-font-weight: 700;
+  --heading-2-font-color: var(--forest);
+  --heading-2-font-family: var(--font-family);
+
+  --heading-3-font-size: 1.8rem;
+  --heading-3-font-weight: 500;
+  --heading-3-font-color: var(--forest);
+  --heading-3-font-family: var(--font-family);
+
+  --heading-4-font-size: 1.6rem;
+  --heading-4-font-weight: 700;
+  --heading-4-font-color: var(--forest);
+  --heading-4-font-family: var(--font-family);
+
+  --heading-5-font-size: 1.4rem;
+  --heading-5-font-weight: 700;
+  --heading-5-font-color: var(--forest);
+  --heading-5-font-family: var(--font-family);
+
+  --heading-6-font-size: 1.2rem;
+  --heading-6-font-weight: 700;
+  --heading-6-font-color: var(--forest);
+  --heading-6-font-family: var(--font-family);
+
+  --max-container-width: 112rem;
+  --container-horizontal-padding: 2rem;
+  --container-vertical-padding: 0;
+
+  --column-horizontal-gutter: 1rem;
+  --column-vertical-gutter: 0;
+
+  --row-horizontal-gutter: 0;
+  --row-vertical-gutter: 1rem;
+
+  --nav-padding-horizontal: 1rem;
+  --nav-padding-vertical: 0.5rem;
+  --nav-background-color: var(--white);
+  --nav-link-color: var(--pine);
+  --nav-link-hover-color: var(--pine-lighten-1);
+  --nav-border-color: var(--smoke-darken-1);
+
+  --transition: 0.2s ease-in-out;
+
+  --anchor-color: var(--ember);
+  --anchor-hover-color: var(--ember-lighten-1);
+
+  --block-quote-attriubte-color: var(--smoke-darken-4);
+  --block-quote-border-color: var(--smoke-darken-2);
+}

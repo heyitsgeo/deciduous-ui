@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Employee</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <nav aria-label="breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="employees.html">Employees</a></li>
+      <li><a href="add-employee.html" aria-current="page">Add Employee</a></li>
+    </ol>
+  </nav>
+  <hgroup>
+    <h1>Add Employee</h1>
+    <h6>Enter employee details.</h6>
+  </hgroup>
+</header>
+<main>
+  <article>
+  <form method="post" action="/employees">
+    <label for="Username">Username</label>
+    <input type="text" required data-val="true" data-val-required="The Username field is required." id="Username" name="Username" value="">
+    <span class="text-danger field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true"></span>
+
+    <label for="Name">Name</label>
+    <input type="text" required data-val="true" data-val-required="The Name field is required." id="Name" name="Name" value="">
+    <span class="text-danger field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+
+    <label for="Email">Email</label>
+    <input type="email" required data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" value="">
+    <span class="text-danger field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+
+    <label for="HiredOn">Hired On</label>
+    <input type="date" required data-val="true" data-val-required="The Hired On field is required." id="HiredOn" name="HiredOn" value=""><input name="__Invariant" type="hidden" value="HiredOn" />
+    <span class="text-danger field-validation-valid" data-valmsg-for="HiredOn" data-valmsg-replace="true"></span>
+
+    <label for="Salary">Salary</label>
+    <input type="number" required data-val="true" data-val-number="The field Salary must be a number." data-val-required="The Salary field is required." id="Salary" name="Salary" value=""><input name="__Invariant" type="hidden" value="Salary" />
+    <span class="text-danger field-validation-valid" data-valmsg-for="Salary" data-valmsg-replace="true"></span>
+
+    <label for="ProfitSharingTimeMultiplier">Profit Sharing Time Multiplier</label>
+    <input type="number" required data-val="true" data-val-number="The field Profit Sharing Time Multiplier must be a number." data-val-required="The Profit Sharing Time Multiplier field is required." id="ProfitSharingTimeMultiplier" name="ProfitSharingTimeMultiplier" value=""><input name="__Invariant" type="hidden" value="ProfitSharingTimeMultiplier" />
+    <span class="text-danger field-validation-valid" data-valmsg-for="ProfitSharingTimeMultiplier" data-valmsg-replace="true"></span>
+
+    <label for="ProfitSharingRoleMultiplier">Profit Sharing Role Multiplier</label>
+    <input type="number" required data-val="true" data-val-number="The field Profit Sharing Role Multiplier must be a number." data-val-required="The Profit Sharing Role Multiplier field is required." id="ProfitSharingRoleMultiplier" name="ProfitSharingRoleMultiplier" value=""><input name="__Invariant" type="hidden" value="ProfitSharingRoleMultiplier" />
+    <span class="text-danger field-validation-valid" data-valmsg-for="ProfitSharingRoleMultiplier" data-valmsg-replace="true"></span>
+
+    <label for="DefaultTbur">Default TBUR</label>
+    <input type="number" min="0" max="1" step="any" required data-val="true" data-val-number="The field Default TBUR must be a number." data-val-required="The Default TBUR field is required." id="DefaultTbur" name="DefaultTbur" value=""><input name="__Invariant" type="hidden" value="DefaultTbur" />
+    <span class="text-danger field-validation-valid" data-valmsg-for="DefaultTbur" data-valmsg-replace="true"></span>
+
+    <button type="submit" class="btn btn-primary">Add Employee</button>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Iq39Kmc0MxAqHwdLZ4di8hRCkVmuci1swkwyIEL6Vz-P0RNWkXUvJsYiKL8awhE08x_FysfuI4OYyaBlbc3jZKDvj9zer-jPaCpglmQW8hnXP3jcuk5n1pCsT_MvLTGI4VygypHMjOjRoBCQ7E5j9g-5pahS4WZnenGRYagO19jbfNVY6GyRv4QUawD9oEnHQ" />
+  </form>
+  </article>
+</main>
+
+</body>
+</html>

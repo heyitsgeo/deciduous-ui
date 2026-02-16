@@ -1,0 +1,28 @@
+{
+  "name": "deciduous-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:css": "sass --style expanded --embed-source-map --no-error-css scss/:css/",
+    "watch:scss": "nodemon --watch scss -e scss --exec 'npm run build:scss'",
+    "watch:site:scss": "sass --watch --style compressed --no-source-map --no-error-css scss/:_site/css/",
+    "watch:site": "npx @11ty/eleventy --serve",
+    "build:site": "npx @11ty/eleventy",
+    "build:site:scss": "sass --style compressed --no-source-map --no-error-css scss/:_site/css/",
+    "watch": "npm-run-all build:site:scss --parallel watch:site:scss watch:site",
+    "build:scss": "npm-run-all compile:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "clean-css": "^5.3.2",
+    "nodemon": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.29",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.67.0"
+  }
+}
